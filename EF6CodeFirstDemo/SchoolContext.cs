@@ -7,6 +7,7 @@ namespace EF6CodeFirstDemo
         public SchoolContext() : base("SchoolDB-EF6CodeFirst")
         {
             Database.SetInitializer<SchoolContext>(new SchoolDBInitializer());
+
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
